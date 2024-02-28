@@ -8,9 +8,9 @@ import FooterView from "./components/FooterView.vue"
   <HeaderView/>
   <MainView/>
   <FooterView/>
+
 </template>
 
 
 <style scoped>
-
 </style>

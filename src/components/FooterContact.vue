@@ -49,46 +49,46 @@ export default {
 
 <template>
   <div style="padding: 46px 0 10px 0;">
-  <div class="container">
-    <div class="row">
-      <div class="form-group col-12">
-        <label for="inputEmail4">Correo Electrónico</label>
-        <input type="email" class="form-control" id="inputEmail4" placeholder="Email@ejemplo.com">
-      </div>
-      <div class="form-group col-12">
-        <label for="inputAddress">Dirección</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="0000, 9 de Julio">
-      </div>
-      <div class="col-12">
-        <label>Provincia</label>
-        <select class="form-control" v-model="selectedProvincia" @change="municipio">
-          <option value="0">Seleccione su provincia</option>
-          <option v-for="provincia in provincias" :key="provincia.id" :value="provincia.id">{{ provincia.nombre }}
-          </option>
-        </select>
-      </div>
-      <div class="col-6">
-        <label>Municipio</label>
-        <select class="form-control" v-model="selectedMunicipio" @change="localidad">
-          <option value="0">Seleccione su municipio</option>
-          <option v-for="municipio in municipios" :key="municipio.id" :value="municipio.id">{{ municipio.nombre }}
-          </option>
-        </select>
-      </div>
-      <div class="col-6">
-        <label>Localidad</label>
-        <select class="form-control" v-model="selectedLocalidad">
-          <option value="0">Seleccione su localidad</option>
-          <option v-for="localidad in localidades" :key="localidad.id" :value="localidad.id">{{ localidad.nombre }}
-          </option>
-        </select>
-      </div>
-      <div class="col-12 text-end mx-auto">
-        <button style="margin-top: 10px;" type="submit" class="btn btn-light">Enviar</button>
+    <div class="container">
+      <div class="row">
+        <div class="form-group col-12">
+          <label for="inputEmail4">Correo Electrónico</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Email@ejemplo.com">
+        </div>
+        <div class="form-group col-12">
+          <label for="inputAddress">Dirección</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="0000, 9 de Julio">
+        </div>
+        <div class="col-12">
+          <label>Provincia</label>
+          <select class="form-control" v-model="selectedProvincia" @change="municipio">
+            <option value="0">Seleccione su provincia</option>
+            <option v-for="provincia in provincias" :key="provincia.id" :value="provincia.id">{{ provincia.nombre }}
+            </option>
+          </select>
+        </div>
+        <div class="col-6">
+          <label>Municipio</label>
+          <select class="form-control" v-model="selectedMunicipio" @change="localidad">
+            <option value="0">Seleccione su municipio</option>
+            <option v-for="municipio in municipios" :key="municipio.id" :value="municipio.id">{{ municipio.nombre }}
+            </option>
+          </select>
+        </div>
+        <div class="col-6">
+          <label>Localidad</label>
+          <select class="form-control" v-model="selectedLocalidad">
+            <option value="0">Seleccione su localidad</option>
+            <option v-for="localidad in localidades" :key="localidad.id" :value="localidad.id">{{ localidad.nombre }}
+            </option>
+          </select>
+        </div>
+        <div class="col-12 text-end mx-auto">
+          <button style="margin-top: 10px;" type="submit" class="btn btn-light">Enviar</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </template>
 
 
@@ -97,4 +97,23 @@ div {
   background-color: black !important;
   color: white !important;
 }
+
+input::placeholder{
+  background-color: rgb(58, 58, 58) !important;
+  color: #9e9e9e !important;
+}
+input{
+  background-color: rgb(58, 58, 58) !important;
+  color: #ffffff !important;
+}
+select{
+  background-color: rgb(58, 58, 58) !important;
+  color: #ffffff !important;
+}
+button{
+  background-color: rgb(58, 58, 58) !important;
+  color: #f5f5f5 !important;
+  font-weight: bold;
+}
+
 </style>

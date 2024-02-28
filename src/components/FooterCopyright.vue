@@ -20,7 +20,7 @@
             </div>
             <div class="contact col-sm-4 col-lg-4 col-xl-12 col-xs-12 text-xl-center text-xs-center order-xl-2 order-xs-2">
                 <ul class="nav justify-content-around">
-                    <li class="ms-3"><a title="hola" href=""><i class="bi bi-whatsapp" style="color: white;"></i></a></li>
+                    <li class="ms-3"><a href=""><i class="bi bi-whatsapp" style="color: white;"></i></a></li>
                     <li class="ms-3"><a href=""><i class="bi bi-facebook" style="color: white;"></i></a></li>
                     <li class="ms-3"><a href=""><i class="bi bi-twitter" style="color: white;"></i></a></li>
                     <li class="ms-3"><a href=""><i class="bi bi-telegram" style="color: white;"></i></a></li>
