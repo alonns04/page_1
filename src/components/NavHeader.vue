@@ -15,7 +15,7 @@
                   aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon navbar-dark"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                   <div class="navbar-nav">
                     <a class="nav-link options" href="#">Inicio</a>
                     <a class="nav-link options" href="#">Nosotros</a>
@@ -58,7 +58,7 @@ nav {
 }
 
 a {
-  color: white !important;
+  color: white;
 }
 
 div {
@@ -71,15 +71,43 @@ p {
   margin-right: 46px !important;
 }
 
-.options{
+.options {
   border-radius: 100px;
 }
-.options:hover {
-      background-color: antiquewhite;
-      color: black !important;
+
+@media (min-width: 768px) {
+  .options:hover {
+    background-color: rgb(255, 255, 255);
+    color: black !important;
+  }
 }
 
-#navimage:hover{
+@media (max-width: 768px) {
+  .options:hover {
+    animation: changeColor 0.2s 1;
+    color: white;
+  }
+}
+
+
+
+@keyframes changeColor {
+
+  0%,
+  100% {
+    color: #ffffff;
+  }
+  25%,
+  75% {
+    color: #b1b1b1;
+  }
+  50% {
+    color: #8b8b8b;
+  }
+}
+
+
+#navimage:hover {
   animation: sacudir 0.5s ease 1;
 }
 
@@ -87,12 +115,23 @@ p {
 
 
 @keyframes sacudir {
-      0% { transform: translateX(0); }
-      25% { transform: translateX(-3px) rotate(-3deg); }
-      50% { transform: translateX(3px) rotate(3deg); }
-      75% { transform: translateX(-3px) rotate(-3deg); }
-      100% { transform: translateX(0); }
-    }
+  0% {
+    transform: translateX(0);
+  }
 
+  25% {
+    transform: translateX(-3px) rotate(-3deg);
+  }
 
-</style>
+  50% {
+    transform: translateX(3px) rotate(3deg);
+  }
+
+  75% {
+    transform: translateX(-3px) rotate(-3deg);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}</style>
