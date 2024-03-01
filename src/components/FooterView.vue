@@ -6,15 +6,17 @@ import FooterContact from "../components/FooterContact.vue"
 
 
 <template>
-    <div class="container-fluid">
-        <div class="row">
-            <div class=" navf col-xl-6 col-md-12">
-                <FooterCopyright />
-            </div>
-            <div class="col-xl-6 col-md-12">
-                <div class="container">
-                    <div class="">
-                        <FooterContact />
+    <div style="padding-top: 100px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class=" navf col-xl-6 col-md-12">
+                    <FooterCopyright />
+                </div>
+                <div class="col-xl-6 col-md-12">
+                    <div class="container">
+                        <div class="">
+                            <FooterContact />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -38,8 +40,8 @@ row {
     padding: 0 !important;
 }
 
-div {
-    background-color: black;
+div{
+    background-color: black !important;
 }
 
 .navf {

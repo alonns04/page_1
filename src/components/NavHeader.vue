@@ -17,16 +17,10 @@
                 </button>
                 <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                   <div class="navbar-nav">
-                    <a class="nav-link options" href="#">Inicio</a>
-                    <a class="nav-link options" href="#">Nosotros</a>
-                    <a class="nav-link options" href="#">Contáctanos</a>
+                    <a class="nav-link options" href="index.html">Inicio</a>
+                    <a class="nav-link options" href="index.html">Nosotros</a>
+                    <a class="nav-link options" href="index.html">Contáctanos</a>
                   </div>
-                  <ul style="padding-top: 25px;" class="nav justify-content-around d-block d-sm-none">
-                    <li class="ms-3"><a href=""><i class="bi bi-whatsapp" style="color: white;"></i></a></li>
-                    <li class="ms-3"><a href=""><i class="bi bi-facebook" style="color: white;"></i></a></li>
-                    <li class="ms-3"><a href=""><i class="bi bi-twitter" style="color: white;"></i></a></li>
-                    <li class="ms-3"><a href=""><i class="bi bi-telegram" style="color: white;"></i></a></li>
-                  </ul>
                 </div>
               </div>
             </nav>
@@ -35,10 +29,10 @@
 
       </div>
 
-      <div class="col-6">
+      <div class="col-6 ccc2">
 
         <div class="row justify-content-center ccc">
-          <div class="col-1 d-none d-sm-block"></div>
+          <div class="col-1col-xs-7"></div>
           <div class="col-7 col-xs-4 d-none d-sm-block">
             <ul style="padding-top: 25px;" class="nav justify-content-around">
               <li class="ms-3"><a href=""><i class="bi bi-whatsapp" style="color: white;"></i></a></li>
@@ -48,10 +42,10 @@
             </ul>
 
           </div>
-          <div class="col-4 justify-content-center text-center ccc2">
-              <img id="navimage" style="height: 70px;" 
-                src="https://www.creativefabrica.com/wp-content/uploads/2021/03/20/Mountain-logo-Design-Graphics-9785421-1-580x435.png"
-                alt="">
+          <div class="col-xxl-1 col-xl-2 col-lg-4 col-sm-4 col-xs-5 justify-content-center text-center ccc2">
+            <img id="navimage" style="height: 70px;"
+              src="https://www.creativefabrica.com/wp-content/uploads/2021/03/20/Mountain-logo-Design-Graphics-9785421-1-580x435.png"
+              alt="">
           </div>
         </div>
       </div>
@@ -102,6 +96,7 @@ p {
     color: white;
   }
 }
+
 @media screen and (max-width: 287px) {
   .ccc {
     justify-content: start !important;
@@ -110,10 +105,9 @@ p {
 
 @media screen and (min-width: 576px) and (max-width: 630px) {
   .ccc2 {
-    padding-left: 0 !important;
+    padding: 0 !important;
   }
 }
-
 
 @keyframes changeColor {
 
